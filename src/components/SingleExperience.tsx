@@ -1,5 +1,6 @@
 import React from "react";
-import { Experience, experiences } from "@/utils/constants";
+import { experiences } from "@/utils/constants";
+import { Experience } from "@/utils/types";
 
 const SingleExperience = () => {
   return (
