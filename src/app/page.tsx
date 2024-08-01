@@ -12,7 +12,7 @@ export default function Home() {
         <div className="font-poppins text-center font-bold text-4xl flex flex-col gap-2 md:text-left text-primary">
           <h3>Hi 👋</h3>
           <h3>My name is</h3>
-          <h3 className="font-poppins font-bold leading-10 tracking-wide flex gap-4 justify-center">
+          <h3 className="font-poppins font-bold leading-10 tracking-wide flex gap-4 justify-center md:justify-start ">
             <span className="text-purple inline-block">Khizar</span>
             <span className="text-lightBlue mr-4 inline-block">Kamal</span>
           </h3>
