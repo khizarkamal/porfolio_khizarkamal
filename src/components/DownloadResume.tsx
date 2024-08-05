@@ -8,7 +8,7 @@ const DownloadResume = ({ styles }: any) => {
   return (
     <div className="flex justify-center items-center">
       <Link
-        className={styles}
+        className={`${styles} animate-in slide-in-from-top`}
         href={"/resume.pdf"}
         target="_blank"
         download={"resume.pdf"}

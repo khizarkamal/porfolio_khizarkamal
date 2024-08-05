@@ -34,13 +34,23 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        "zoom-out": {
+          "0%": { transform: "scale(1)" },
+          "100%": { transform: "scale(0.9)" },
+        },
+      },
+      animation: {
+        "zoom-out": "zoom-out 0.3s ease-in-out forwards",
+      },
     },
   },
+
   variants: {
     extend: {
       scrollBehavior: ["responsive"],
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;

@@ -14,7 +14,7 @@ const TechStack = () => {
           return (
             <Image
               key={index}
-              className="w-20 h-20 md:w-28 md:h-28 object-contain"
+              className={`w-20 h-20 md:w-28 md:h-28 object-contain`}
               src={image}
               alt="tect-stack-image"
             />

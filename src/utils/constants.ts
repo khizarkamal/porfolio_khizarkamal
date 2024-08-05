@@ -126,9 +126,9 @@ export const navItems: NavItem[] = [
     text: "Tech Stack",
     link: "#tech-stack",
   },
-  // {
-  //   id: "contact",
-  //   text: "Contact",
-  //   link: "#contact",
-  // },
+  {
+    id: "projects",
+    text: "Projects",
+    link: "#projects",
+  },
 ];

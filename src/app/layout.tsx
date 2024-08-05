@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.className} scroll-smooth`}>
+      <body className={`${dmSans.className}`}>
         <main className="px-4 py-4 max-w-5xl mx-auto">
           <Navbar />
           <section>{children}</section>
