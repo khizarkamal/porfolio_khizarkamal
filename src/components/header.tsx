@@ -7,7 +7,10 @@ const header = () => {
     <header className="flex justify-between items-center gap-4 my-20">
       <div className="font-poppins text-center font-bold text-4xl flex flex-col gap-2 md:text-left text-primary">
         <h3>
-          Hi <span>👋</span>
+          Hi{" "}
+          <span className="inline-block cursor-pointer transition-all hover:rotate-12 duration-500 ease-in-out">
+            👋
+          </span>
         </h3>
         <h3>My name is</h3>
         <h3 className="animate-in slide-in-from-left duration-1000 font-poppins font-bold leading-10 tracking-wide flex gap-4 justify-center md:justify-start ">
