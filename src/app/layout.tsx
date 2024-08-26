@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.className}`}>
+      <body className={`${dmSans.className} overflow-x-hidden`}>
         <main className="px-4 py-4 max-w-5xl mx-auto">
           <Navbar />
           <section>{children}</section>
