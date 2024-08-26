@@ -23,18 +23,8 @@ const AboutMe = () => {
             return;
           }
           if (firstParagraph.current && secondParagraph.current) {
-            firstParagraph.current.classList.add(
-              "transition-all",
-              "duration-1000",
-              "translate-x-0",
-              "ease-in-out"
-            );
-            secondParagraph.current.classList.add(
-              "transition-all",
-              "duration-1000",
-              "translate-x-0",
-              "ease-in-out"
-            );
+            firstParagraph.current.classList.add("translate-x-0");
+            secondParagraph.current.classList.add("translate-x-0");
           }
         });
       },
@@ -52,7 +42,10 @@ const AboutMe = () => {
         className="font-poppins font-normal text-sm md:text-lg
       text-center"
       >
-        <p ref={firstParagraph} className="mb-8 -translate-x-full">
+        <p
+          ref={firstParagraph}
+          className="mb-8 -translate-x-full transition-all duration-1000 ease-in-out"
+        >
           Dynamic and dedicated React JavaScript developer with 2 years of
           hands-on experience specializing in building responsive and
           user-friendly web applications. I excel in developing robust front-end
@@ -61,7 +54,10 @@ const AboutMe = () => {
           for state management and integrating with Restful APIs to deliver
           seamless user experiences.
         </p>
-        <p ref={secondParagraph} className=" translate-x-full">
+        <p
+          ref={secondParagraph}
+          className=" translate-x-full transition-all duration-1000 ease-in-out"
+        >
           I take pride in creating efficient and maintainable code with a keen
           focus on User Interface and User Experience design principles.
           Actively involved in the developer community, I contribute to
