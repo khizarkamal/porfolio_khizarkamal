@@ -7,7 +7,7 @@ import DownloadResume from "./DownloadResume";
 
 const AboutMe = () => {
   const firstParagraph = useRef<HTMLParagraphElement | null>(null);
-  const secondParagraph = useRef<null | HTMLParagraphElement>(null);
+  const secondParagraph = useRef<HTMLParagraphElement | null>(null);
 
   useEffect(() => {
     const aboutMeSection = document.getElementById("about-me") as HTMLElement;
@@ -22,8 +22,10 @@ const AboutMe = () => {
           if (!entry.isIntersecting) {
             return;
           }
+
           if (firstParagraph.current && secondParagraph.current) {
             firstParagraph.current.classList.add("translate-x-0");
+            secondParagraph.current.classList.remove("translate-x-full");
             secondParagraph.current.classList.add("translate-x-0");
           }
         });
@@ -56,7 +58,7 @@ const AboutMe = () => {
         </p>
         <p
           ref={secondParagraph}
-          className=" translate-x-full transition-all duration-1000 ease-in-out"
+          className="translate-x-full transition-all duration-1000 ease-in-out"
         >
           I take pride in creating efficient and maintainable code with a keen
           focus on User Interface and User Experience design principles.
