@@ -28,6 +28,9 @@ import GitHubImage from "@/assets/images/akar-icons_github-fill.svg";
 import AliflailaAdmin from "@/assets/images/aliflaila.png";
 import Aliflaila from "@/assets/images/aliflaila1.png";
 import GuideConnect from "@/assets/images/guideConnect.png";
+import GridLayout from "@/assets/images/Grid Layout.png";
+import TodoApplication from "@/assets/images/Full Stack Todo Application.png";
+import AcmeDashboard from "@/assets/images/Acme Dashboard.png";
 
 export const experiences: Experience[] = [
   {
@@ -74,6 +77,33 @@ export const projects: Project[] = [
     githubLink:
       "https://gitlab.com/haseebshams/aliflailaweb/-/tree/khi-stg?ref_type=heads",
     image: Aliflaila.src,
+  },
+  {
+    title: "Acme Dashboard",
+    shortDescription:
+      "Next JS Full Stack application to handle invoices data. Complete CRUD operation uisng modren Server Actions to handle basic Crud. And useed NextAuth for Authentication",
+    techStack: ["NextJs", "React JS", "Tailwind", "SQL"],
+    siteUrl: "https://nextjs-dashboard-pi-one-75.vercel.app/",
+    githubLink: "https://github.com/khizarkamal/nextjs-dashboard",
+    image: AcmeDashboard.src,
+  },
+  {
+    title: "News Landing Page Dashboard",
+    shortDescription:
+      "Basic Grid Layout Designed to practice about grid areas, grid rows and columns.",
+    techStack: ["HTML", "CSS", "JS"],
+    siteUrl: "https://news-layout-zeta.vercel.app/",
+    githubLink: "/",
+    image: GridLayout.src,
+  },
+  {
+    title: "Full Stack Todo Application",
+    shortDescription:
+      "Complete Fullsack Todo Application with all crud operations.Loading States handled for each operation.Completed using React Js And Node JS with MogoDb Database",
+    techStack: ["Mongo", "Express", "Node", "React", "Tailwind"],
+    siteUrl: "https://todo-app-front-end-eight.vercel.app/",
+    githubLink: "https://github.com/khizarkamal/TodoApp_FrontEnd",
+    image: TodoApplication.src,
   },
 ];
 

@@ -14,14 +14,14 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className="overflow-hidden shadow-lg rounded-3xl bg-white max-w-80"
+      className="overflow-hidden shadow-lg cursor-pointer rounded-3xl bg-white max-w-80 outline outline-1 outline-offset-8 outline-lightBlue hover:outline-offset-4 transition-all duration-500 hover:outline-purple"
       key={index}
     >
       <figure className=" overflow-hidden">
         <Image
           width={1000}
           height={256}
-          className="w-full h-52 object-cover opacity-60 hover:opacity-100 duration-500 cursor-pointer "
+          className="w-full h-52 object-cover cursor-pointer "
           src={project.image}
           alt={project.title}
         />
