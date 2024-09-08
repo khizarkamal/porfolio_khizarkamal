@@ -2,13 +2,13 @@ import TechStack from "@/components/TechStack";
 import Projects from "@/components/Projects";
 import AboutMe from "@/components/AboutMe";
 import Experience from "@/components/Experience";
-import Header from "@/components/Header";
+import HeaderComponent from "@/components/HeaderComponent";
 
 export default function Home() {
   return (
     <section>
       <div id="header">
-        <Header />
+        <HeaderComponent />
       </div>
       <div id="tech-stack">
         <TechStack />

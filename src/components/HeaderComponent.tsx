@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import profileImage from "@/assets/images/Khizar.jpg";
 
-const Header = () => {
+const HeaderComponent = () => {
   return (
     <header className="flex justify-between items-center gap-4 my-20">
       <div className="font-poppins text-center font-bold text-4xl flex flex-col gap-2 md:text-left text-primary">
@@ -34,4 +34,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderComponent;
