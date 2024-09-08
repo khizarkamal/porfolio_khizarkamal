@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import profileImage from "@/assets/images/Khizar.jpg";
 
-const header = () => {
+const Header = () => {
   return (
     <header className="flex justify-between items-center gap-4 my-20">
       <div className="font-poppins text-center font-bold text-4xl flex flex-col gap-2 md:text-left text-primary">
@@ -26,7 +26,7 @@ const header = () => {
       <figure className="hidden rounded-full bg-gradient-primary sm:flex sm:items-center sm:justify-center sm:min-w-56 sm:min-h-56 sm:max-w-56 sm:max-h-56  md:min-w-80 md:min-h-80 md:max-w-80 md:max-h-80 animate-in slide-in-from-right duration-1000 ">
         <Image
           src={profileImage}
-          className="w-[95%] h-[95%] object-cover grayscale rounded-full hover:grayscale-0 duration-500 cursor-pointer"
+          className="w-[95%] h-[95%] custom-radius hover:hover-custome-radius transition-all duration-700 object-cover grayscale  hover:grayscale-0 cursor-pointer"
           alt="profile-image"
         />
       </figure>
@@ -34,4 +34,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;

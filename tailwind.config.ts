@@ -51,6 +51,19 @@ const config: Config = {
       scrollBehavior: ["responsive"],
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ addUtilities }: any) {
+      const newUtilities = {
+        ".custom-radius": {
+          borderRadius: "30% 70% 72% 28% / 30% 34% 66% 70%",
+        },
+        ".hover-custome-radius": {
+          borderRadius: "80% 20% 89% 11% / 21% 74% 26% 79%",
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
 };
 export default config;
